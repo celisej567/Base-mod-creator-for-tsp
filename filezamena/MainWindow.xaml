@@ -1,0 +1,15 @@
+﻿<Window x:Class="filezamena.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:filezamena"
+        mc:Ignorable="d"
+        Title="TSPMODMAKER" Height="450" Width="515.265">
+    <Grid>
+        <Button Content="S" Margin="147,275,154,0" VerticalAlignment="Top" Height="108" FontSize="72" FontFamily="Impact" Click="Button_Click"/>
+        <Label Content="Create" HorizontalAlignment="Left" Height="74" Margin="132,26,0,0" VerticalAlignment="Top" Width="236" FontFamily="Impact" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="nameofthemod"  HorizontalAlignment="Left" Height="38" Margin="112,123,0,0" TextWrapping="Wrap" Text="NAME" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FFA0A0A0" BorderBrush="Black" BorderThickness="3"/>
+        <TextBox HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" Text="FOLDER NAME" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FFA0A0A0" BorderBrush="Black" BorderThickness="3" Margin="112,196,0,0"/>
+    </Grid>
+</Window>
