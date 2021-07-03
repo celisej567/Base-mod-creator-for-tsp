@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:filezamena"
         mc:Ignorable="d"
+        
         Title="TSPMODMAKER" 
-        Height="450" 
-        Width="515.265"
+        Height="448.5" 
+        Width="659.265"
         Icon="C:\Users\celis\Documents\The Stanley Parable Ultimate\Autorun Files\image\4.ico"
         ResizeMode="NoResize"
         >
@@ -16,7 +17,7 @@
         <Button 
             x:Name="Start"
             Content="Start" 
-            Margin="147,288,154,0" 
+            Margin="274,288,27,0" 
             VerticalAlignment="Top" 
             Height="108" 
             FontSize="72" 
@@ -103,13 +104,13 @@
             x:Name="DLLCheck"
             Content="Create DLL for SourceMods" 
             HorizontalAlignment="Left"
-            Margin="27,258,0,0" 
+            Margin="27,293,0,0" 
             VerticalAlignment="Top" 
             RenderTransformOrigin="0.63,-1.324" 
             Width="199" 
             Padding="4,-1,0,0" 
             ScrollViewer.CanContentScroll="True" 
-            Height="25" 
+            Height="26" 
             VerticalContentAlignment="Center"
             />
 
@@ -117,7 +118,7 @@
         <Grid.Effect>
             <BlurEffect Radius="1.5" RenderingBias="Quality"/>
         </Grid.Effect>
-    
-    
+
+
     </Grid>
 </Window>

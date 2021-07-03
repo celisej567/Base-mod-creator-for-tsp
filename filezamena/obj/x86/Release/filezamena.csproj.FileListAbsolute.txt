@@ -1,0 +1,15 @@
+F:\C#\filezamena\filezamena\bin\x86\Release\filezamena.exe.config
+F:\C#\filezamena\filezamena\bin\x86\Release\filezamena.exe
+F:\C#\filezamena\filezamena\bin\x86\Release\filezamena.pdb
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.csprojAssemblyReference.cache
+F:\C#\filezamena\filezamena\obj\x86\Release\MainWindow.g.cs
+F:\C#\filezamena\filezamena\obj\x86\Release\App.g.cs
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena_MarkupCompile.cache
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena_MarkupCompile.lref
+F:\C#\filezamena\filezamena\obj\x86\Release\MainWindow.baml
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.g.resources
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.Properties.Resources.resources
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.csproj.GenerateResource.cache
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.csproj.CoreCompileInputs.cache
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.exe
+F:\C#\filezamena\filezamena\obj\x86\Release\filezamena.pdb
