@@ -1,0 +1,15 @@
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.csprojAssemblyReference.cache
+F:\C#\filezamena\filezamena\obj\Debug\MainWindow.g.cs
+F:\C#\filezamena\filezamena\obj\Debug\App.g.cs
+F:\C#\filezamena\filezamena\obj\Debug\filezamena_MarkupCompile.cache
+F:\C#\filezamena\filezamena\obj\Debug\filezamena_MarkupCompile.lref
+F:\C#\filezamena\filezamena\bin\Debug\filezamena.exe.config
+F:\C#\filezamena\filezamena\bin\Debug\filezamena.exe
+F:\C#\filezamena\filezamena\bin\Debug\filezamena.pdb
+F:\C#\filezamena\filezamena\obj\Debug\MainWindow.baml
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.g.resources
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.Properties.Resources.resources
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.csproj.GenerateResource.cache
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.csproj.CoreCompileInputs.cache
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.exe
+F:\C#\filezamena\filezamena\obj\Debug\filezamena.pdb

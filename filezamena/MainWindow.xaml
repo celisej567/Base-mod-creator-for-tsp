@@ -5,11 +5,119 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:filezamena"
         mc:Ignorable="d"
-        Title="TSPMODMAKER" Height="450" Width="515.265">
-    <Grid>
-        <Button Content="S" Margin="147,275,154,0" VerticalAlignment="Top" Height="108" FontSize="72" FontFamily="Impact" Click="Button_Click"/>
-        <Label Content="Create" HorizontalAlignment="Left" Height="74" Margin="132,26,0,0" VerticalAlignment="Top" Width="236" FontFamily="Impact" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="nameofthemod"  HorizontalAlignment="Left" Height="38" Margin="112,123,0,0" TextWrapping="Wrap" Text="NAME" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FFA0A0A0" BorderBrush="Black" BorderThickness="3"/>
-        <TextBox HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" Text="FOLDER NAME" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FFA0A0A0" BorderBrush="Black" BorderThickness="3" Margin="112,196,0,0"/>
+        Title="TSPMODMAKER" 
+        Height="450" 
+        Width="515.265"
+        Icon="C:\Users\celis\Documents\The Stanley Parable Ultimate\Autorun Files\image\4.ico"
+        ResizeMode="NoResize"
+        >
+    <Grid Background="#7F474747">
+
+        <Button 
+            x:Name="Start"
+            Content="Start" 
+            Margin="147,288,154,0" 
+            VerticalAlignment="Top" 
+            Height="108" 
+            FontSize="72" 
+            FontFamily="Impact" 
+            Click="Button_Click" 
+            BorderBrush="#FF717070"
+            />
+        <Label 
+            Content="Create" 
+            HorizontalAlignment="Left" 
+            Height="74" 
+            Margin="132,26,0,0" 
+            VerticalAlignment="Top" 
+            Width="236" 
+            FontFamily="Impact" 
+            FontSize="48" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center"
+            />
+        <TextBox 
+            x:Name="modname"
+            HorizontalAlignment="Left" 
+            Height="54" 
+            Margin="27,128,0,0" 
+            TextWrapping="Wrap" 
+            
+            Text="Mod name"
+            
+            VerticalAlignment="Top" 
+            Width="445" 
+            FontSize="36" 
+            Background="#FF9B9B9B" 
+            BorderBrush="Black" 
+            BorderThickness="3"/>
+        <TextBox 
+            x:Name="Foldername" 
+            HorizontalAlignment="Left" 
+            Height="54" 
+            Margin="27,187,0,0" 
+            TextWrapping="Wrap"
+            
+            Text="Folder name"
+            
+            VerticalAlignment="Top" 
+            Width="445" 
+            FontSize="36" 
+            Background="#FF9B9B9B" 
+            BorderBrush="Black" 
+            BorderThickness="3"/>
+        <ProgressBar
+            x:Name="Progressbar"
+            HorizontalAlignment="Left" 
+            Height="24" 
+            Margin="63,246,0,0" 
+            VerticalAlignment="Top" 
+            Width="368"
+            Value="50" 
+            Foreground="#FF27C944"
+            Visibility="Hidden"
+            />
+        <Label 
+            x:Name="End"
+            Content="END" 
+            HorizontalAlignment="Left" 
+            Height="60" 
+            Margin="63,228,0,0"
+            VerticalAlignment="Top" 
+            Width="368" 
+            FontSize="36" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center" 
+            FontFamily="Impact"
+            Visibility="Hidden"            
+            />
+        <Label 
+            Content="with a capital letter" 
+            HorizontalAlignment="Left" 
+            Height="31" 
+            Margin="27,105,0,0" 
+            VerticalAlignment="Top" 
+            Width="119"
+            />
+        <CheckBox 
+            x:Name="DLLCheck"
+            Content="Create DLL for SourceMods" 
+            HorizontalAlignment="Left"
+            Margin="27,258,0,0" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="0.63,-1.324" 
+            Width="199" 
+            Padding="4,-1,0,0" 
+            ScrollViewer.CanContentScroll="True" 
+            Height="25" 
+            VerticalContentAlignment="Center"
+            />
+
+
+        <Grid.Effect>
+            <BlurEffect Radius="1.5" RenderingBias="Quality"/>
+        </Grid.Effect>
+    
+    
     </Grid>
 </Window>
