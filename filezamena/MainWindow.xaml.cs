@@ -29,33 +29,32 @@ namespace filezamena
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string modname;
+        public string foldername;
+        public string clearfoldername;
 
 
         public MainWindow()
         {
+            Window1 window1 = new Window1();
+            GameinfoProccess gameinfoProccess = new GameinfoProccess();
             InitializeComponent();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string modname = this.modname.Text;
-            string foldername = this.Foldername.Text+"\\";
-            string clearfoldername = this.Foldername.Text;
 
-            void DLL()
-            {
-                if (!Directory.Exists(foldername + "bin"))
-                    Directory.CreateDirectory(foldername + "bin");
+            this.End.Visibility = Visibility.Hidden;
+            this.Progressbar.Visibility = Visibility.Visible;
+            this.Progressbar.Value = 20;
 
-                var client = new WebClient();
-                client.DownloadFile("https://github.com/celisej567/Base-mod-creator-for-tsp/blob/master/filezamena/Resources/client.dll", foldername+"bin\\client.dll");
 
-                var server = new WebClient();
-                client.DownloadFile("https://github.com/celisej567/Base-mod-creator-for-tsp/blob/master/filezamena/Resources/server.dll", foldername + "bin\\server.dll");
+             modname = this.Modname.Text;
+             foldername = this.Foldername.Text+"\\";
+             clearfoldername = this.Foldername.Text;
 
-                var matchmaking = new WebClient();
-                client.DownloadFile("https://github.com/celisej567/Base-mod-creator-for-tsp/blob/master/filezamena/Resources/matchmaking.dll", foldername + "bin\\matchmaking.dll");
-            }
+
 
             /*
             void DLL()
@@ -85,12 +84,23 @@ namespace filezamena
                 bool? check_dll = this.DLLCheck.IsChecked;
             if (check_dll == true)
             {
-                DLL();
+
+                this.End.Visibility = Visibility.Hidden;
+                this.Progressbar.Visibility = Visibility.Visible;
+                this.Progressbar.Value = 20;
+                Window1 window1 = new Window1();
+                window1.foldername = foldername;
+                window1.Show();
+                
+
                 Workgameinfo();
 
             }
             if (check_dll == false)
             {
+                this.End.Visibility = Visibility.Hidden;
+                this.Progressbar.Visibility = Visibility.Visible;
+                this.Progressbar.Value = 20;
                 Workgameinfo();
             }
                 
@@ -103,15 +113,26 @@ namespace filezamena
             void Workgameinfo()
                 {
 
-                this.End.Visibility = Visibility.Hidden;
-
-                this.Progressbar.Visibility = Visibility.Visible;
+                GameinfoProccess proccessGameinfo = new GameinfoProccess();
+                proccessGameinfo.Show();
+                this.Wait.Visibility = Visibility.Visible;
 
                 Console.WriteLine("---READING---\n");
+
+
+                if (!File.Exists(path_dir + path))
+                {
+                    var fixgameinfo = new WebClient();
+                    string string_fixgameinfo = fixgameinfo.DownloadString("https://raw.githubusercontent.com/celisej567/Base-mod-creator-for-tsp/master/filezamena/bin/Release/thestanleyparable/gameinfo.txt");
+                    File.WriteAllText(path_dir+path, string_fixgameinfo);
+                }
+
+
+
                 string gameinfo_read_write = File.ReadAllText(path_dir+path);
                 Console.WriteLine(gameinfo_read_write);
 
-                this.Progressbar.Value = 20;
+                
 
                 Console.WriteLine("---GENERATING---");
                 
@@ -125,6 +146,7 @@ namespace filezamena
                 File.WriteAllText(path_dir+path, gameinfo_read_write);
                 Console.WriteLine("---WRITED---\n");
                 Console.WriteLine(gameinfo_read_write);
+
                 this.Progressbar.Value = 60;
 
                 Console.WriteLine("---CREATING FOLDER---");
@@ -136,16 +158,19 @@ namespace filezamena
                 Console.WriteLine("---COPING FILES---");
 
 
+                var gameinfo = new WebClient();
+
                     if (!File.Exists(foldername + path))
-                    { File.WriteAllText(foldername + path, Properties.Resources.gameinfo); }
+                    {
+
+                    string string_gameinfo = gameinfo.DownloadString("https://raw.githubusercontent.com/celisej567/Base-mod-creator-for-tsp/master/filezamena/bin/Release/thestanleyparable/gameinfo.txt");
+                    File.WriteAllText(foldername+path,string_gameinfo);
+
+                    }
                     else
                     {
-                        File.Delete(foldername + path);
-                        string g = Properties.Resources.gameinfo;
-                        File.WriteAllText(foldername + path, g);
-
-
-
+                    string read_gameinfo = File.ReadAllText(path_dir + path);
+                    File.WriteAllText(foldername+path,read_gameinfo);
                     }
 
                     this.Progressbar.Value = 90;
@@ -161,9 +186,10 @@ namespace filezamena
 
                     this.Progressbar.Value = 100;
                     this.End.Visibility = Visibility.Visible;
-                
+                    this.Wait.Visibility = Visibility.Hidden;
 
-                
+                    //proccessGameinfo.Hide();
+
             }
         }
 

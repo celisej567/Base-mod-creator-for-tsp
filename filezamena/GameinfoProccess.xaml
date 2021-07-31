@@ -1,0 +1,29 @@
+﻿<Window x:Class="filezamena.GameinfoProccess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:filezamena"
+        mc:Ignorable="d"
+        Title="Processing" Height="193.029" Width="508.043"
+        ResizeMode="NoResize"
+        
+        >
+
+    <Grid Background="#7F474747">
+        <Label 
+            
+            Content="DOWNLOADING gameinfo.txt" 
+            HorizontalAlignment="Left" 
+            Height="60" 
+            Margin="34,66,0,0"
+            VerticalAlignment="Top" 
+            Width="423" 
+            FontSize="36" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center" 
+            FontFamily="Impact"
+                                  
+            />
+    </Grid>
+</Window>

@@ -9,7 +9,6 @@
         Title="TSPMODMAKER" 
         Height="448.5" 
         Width="659.265"
-        Icon="C:\Users\celis\Documents\The Stanley Parable Ultimate\Autorun Files\image\4.ico"
         ResizeMode="NoResize"
         >
     <Grid Background="#7F474747">
@@ -29,7 +28,7 @@
             Content="Create" 
             HorizontalAlignment="Left" 
             Height="74" 
-            Margin="132,26,0,0" 
+            Margin="195,28,0,0" 
             VerticalAlignment="Top" 
             Width="236" 
             FontFamily="Impact" 
@@ -38,7 +37,7 @@
             VerticalContentAlignment="Center"
             />
         <TextBox 
-            x:Name="modname"
+            x:Name="Modname"
             HorizontalAlignment="Left" 
             Height="54" 
             Margin="27,128,0,0" 
@@ -90,7 +89,7 @@
             HorizontalContentAlignment="Center" 
             VerticalContentAlignment="Center" 
             FontFamily="Impact"
-            Visibility="Hidden"            
+            Visibility="Hidden"                      
             />
         <Label 
             Content="with a capital letter" 
@@ -99,6 +98,20 @@
             Margin="27,105,0,0" 
             VerticalAlignment="Top" 
             Width="119"
+            />
+        <Label 
+            x:Name="Wait"
+            Content="PLEASE WAIT" 
+            HorizontalAlignment="Left" 
+            Height="60" 
+            Margin="63,228,0,0"
+            VerticalAlignment="Top" 
+            Width="368" 
+            FontSize="36" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center" 
+            FontFamily="Impact"
+            Visibility="Hidden"                      
             />
         <CheckBox 
             x:Name="DLLCheck"
@@ -115,8 +128,12 @@
             />
 
 
+
         <Grid.Effect>
-            <BlurEffect Radius="1.5" RenderingBias="Quality"/>
+            <BlurEffect
+                Radius="1.5" 
+                RenderingBias="Quality"
+                />
         </Grid.Effect>
 
 
