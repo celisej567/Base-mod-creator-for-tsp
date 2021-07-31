@@ -13,3 +13,9 @@ F:\C#\filezamena\filezamena\obj\Release\filezamena.csproj.GenerateResource.cache
 F:\C#\filezamena\filezamena\obj\Release\filezamena.csproj.CoreCompileInputs.cache
 F:\C#\filezamena\filezamena\obj\Release\filezamena.exe
 F:\C#\filezamena\filezamena\obj\Release\filezamena.pdb
+F:\C#\filezamena\filezamena\obj\Release\Error Code 1.g.cs
+F:\C#\filezamena\filezamena\obj\Release\GameinfoProccess.g.cs
+F:\C#\filezamena\filezamena\obj\Release\Window1.g.cs
+F:\C#\filezamena\filezamena\obj\Release\Error Code 1.baml
+F:\C#\filezamena\filezamena\obj\Release\GameinfoProccess.baml
+F:\C#\filezamena\filezamena\obj\Release\Window1.baml

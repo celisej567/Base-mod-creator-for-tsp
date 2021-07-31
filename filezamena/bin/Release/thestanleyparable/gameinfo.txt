@@ -19,6 +19,17 @@
 
 		SearchPaths
 		{
+
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
+			Game				|all_source_engine_paths|Folder name
 			Game				|gameinfo_path|.
 
 		}
